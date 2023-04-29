@@ -57,6 +57,44 @@
 
 </section><!--FIN DEL Usuario y Contraseña---------------------------------------------------->
 
+<!--PRUEBA DE VALIDACION DE USUARIO Y CONTRASEÑA-->
+<script>
+
+const form= document.querySelector("form")
+ const Usuario= document.getElementById("Usuario")
+ const Contraseña= document.getElementById("Contraseña")
+
+
+form.addEventListener("submit", function(event) { //No permite que se ejecute la funcion hasta subir el formulario.
+
+event.preventDefault(); // No permite que salte una alerta automacticamente cuando carga la pagina
+
+validacion(Usuario.value, Contraseña.value);
+
+});
+ 
+
+function validacion(Usuario,Contraseña){
+
+let usuario2= "GTI03";
+let contraseña2="12345";
+
+if (Usuario===usuario2 && contraseña2===Contraseña) {
+
+  alert("Ha iniciado sesión correctamente");
+
+			window.location.href = "index.html"; // Redrige a la pagina de TUS HUERTOS. AHORA MISMO A INDEX COMO PRUEBA
+
+			} else {
+
+				alert("Usuario incorrecto");
+			}
+}
+
+//FIN DE PRUEBA DE VALIDACION DE USUARIO Y CONTRASEÑA
+
+
+</script>   
 
 </body><!--Fin del body-->
 
