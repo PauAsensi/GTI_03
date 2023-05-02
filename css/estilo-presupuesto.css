@@ -1,0 +1,212 @@
+@import url('https://fonts.cdnfonts.com/css/lovelo');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-bg-color: #ffffff;
+    --main-fg-color: #ffffff;
+    --contrast-bg-color: #ffffff;
+    --contrast-fg-color: #000000;
+    --accent-bg-color: #000000;
+    --accent-fg-color: #fffffe;
+
+    /* Colores de la Web */
+    --naranja: #EDA145;
+    --verde-claro: #C2D9B4;
+    --verde-medio: #598072;
+    --verde-oscuro: #687A61;
+    --marron-claro: #CC9D8F;
+    --marron-oscuro: #806259;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--verde-claro);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: var(--main-fg-color);
+}
+
+
+
+section {
+    height: 100vh;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+section h2 {
+    font-family: "Now Black", sans-serif;
+    font-size: 1.7em;
+    margin-top: 2em;
+    margin-bottom: 2rem;
+    color: var(--contrast-fg-color);
+}
+
+section p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    margin-bottom: 2em;
+    color: var(--contrast-fg-color);
+    text-align: justify;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin-bottom: 2em;
+    color: var(--contrast-fg-color);
+    text-align: justify;
+}
+
+
+section button {
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 20px;
+    width: 12em;
+    height: 3em;
+    background-color: var(--naranja);
+    border: 0;
+    border-radius: 5px;
+}
+
+
+/* Estilos del formulario */
+
+label {
+    display: block; /* para que cada label se muestre en una línea nueva */
+    font-weight: bold;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: -0.8em;
+}
+
+input, textarea {
+    display: block;  /* para que cada input y textarea se muestre en una línea nueva */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 3em;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+textarea {
+    height: 8em;
+}
+
+#provincias {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 3em;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: block; /* para que cada label se muestre en una línea nueva */
+    font-weight: bold;
+    text-align: justify;
+    margin-top:1em;
+}
+
+
+input:focus, textarea:focus {
+    outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
+    border-color:var(--naranja); /* para cambiar el color del borde al hacer focus */
+}
+
+
+.boton-envio-form {
+    float: right;
+    color:white;
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 20px;
+    width: 12em;
+    height: 3em;
+    background-color: var(--naranja);
+    border: 0;
+    border-radius: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 90px;
+    padding-top:1em;
+}
+
+
+.boton-envio-form:hover {
+    background-color:var(--marron-claro);
+}
+
+
+
+.cerrar-popup:hover {
+    background-color:var(--marron-claro);
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    color: var(--contrast-fg-color);
+    text-align: center;
+    border-radius: 20px;
+}
+
+#popup button {
+    background-color: var(--naranja);
+    color: var(--main-bg-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#popup p {
+    font-size:0.75em;
+    text-align: center;
+      }
+
+
+datalist option:checked {
+    font-weight: normal;
+}
