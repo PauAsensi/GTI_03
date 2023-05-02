@@ -1,0 +1,49 @@
+
+
+section{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte superior */
+    border-bottom: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte inferior */
+    padding: 10px; /* espacio dentro de la sección */
+}
+
+
+h1{
+    font-family: "Now Alt Black", sans-serif;
+    color: #598072;
+    font-size: 1.5625rem;
+}
+h2{
+    font-family: "Now Alt Black", sans-serif;
+    color: #598072;
+    font-size: 1rem;
+}
+h3{
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 20px;
+    color: #03A113;
+    width: 4.5em;
+    height:1.5em;
+    border-radius: 1em;
+    border-top: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte superior */
+    border-bottom: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte inferior */
+    padding: 10px; /* espacio dentro de la sección */
+    border-top-left-radius: 10px; /* borde redondeado en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* borde redondeado en la esquina superior derecha */
+    border-bottom-left-radius: 10px; /* borde redondeado en la esquina inferior izquierda */
+    border-bottom-right-radius: 10px; /* borde redondeado en la esquina inferior derecha */
+    text-align: center; /* centra horizontalmente el contenido */
+    line-height: 1.5; /* centra verticalmente el contenido */
+}
+img{
+    width: 3.125em;
+    height: 3.875em;
+}
+{
+    width: 55em;
+    height: 3.875em;
+}
