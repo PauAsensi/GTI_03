@@ -1,76 +1,57 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu Hamburguesa</title>
-  <!--Css-->
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/main-menu.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/modo-oscuro.css">
-  <!--Iconos-->
-  <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!--Menu-->
-<header>
-  <nav id="main-menu">
-    <a href="#"><img src="imagenes/Logo_Claro.png" alt="Logo"></a>
-
-    <ul>
-      <li class="opciones_menu"><a href="#seccion1">INICIO</a></li>
-      <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
-      <li class="opciones_menu"><a href="#seccion3">CONTÁCTANOS</a></li>
-      <li class="opciones_menu"><a href="#seccion4">PREGUNTSA FRECUENTES</a></li>
-      <li class="opciones_menu"><a href="#seccion5">QUIENES SOMOS</a></li>
-      <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
-    </ul>
-
-    <a href="#"><i class="fa-solid fa-user fa-2xl"></i></a>
-    
-    <div class="hamburguesa">
-      <div></div>
-      <div></div>
-      <div></div>
+<section>
+    <div class="container">
+        <h2>Iniciar sesión</h2>
+        <img src="usuario.png" alt="icono inicio sesión">
+        <form onsubmit="validarFormulario(event)">
+            <label for="usuario">Nombre de usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br>
+            <label for="contrasenya">Contraseña:</label><br>
+            <input type="password" id="contrasenya" name="contrasenya" required><br>
+            <!--botón enviar-->
+            <button type="submit" class="boton-envio-form">Enviar</button>
+        </form>
     </div>
-  </nav>
-</header>
-<!--Fin Menu-->
+</section>
 
-<!--Script Menu-->
-<script src="js/main-menu.js"></script>
-<script src="js/cambiar-tema.js"></script>
-<!--Fin Script Menu-->
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-contenido">
+        <p>Usuario o contraseña incorrectos</p><br>
+        <p>Por favor, comprueba que lo has escrito correctamente e inténtalo de nuevo.</p>
+        <<button id="cerrar-popup" class="boton-cerrar-popup">Cerrar</button>
+    </div>
+</div>
 
-<!--Contenido-->
-<main>
-
-  <section id="seccion1">
-    <header>
-      <h2>CONTROLA TU HUERTO HIDROPONICO</h2>
-    </header>
-    <p>Cultiva tu propio huerto hidropónico en casa con nuestro sistema monitorizado. Controla el crecimiento de tus plantas desde tu móvil u ordenador. ¡Cómpralo ya!</p>
-    <button>SABER MÁS</button>
-  </section>
-
-</main>
-<!--Fin Contenido-->
-
-<!--Footer-->
-<footer>
-  <nav id="footer">
-    <section>
-      <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
-      <a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
-    </section>
-  </nav>
-<!--Fin Footer-->
-</footer>
+<script>function validarFormulario(event) {
+    event.preventDefault(); // previene el envío del formulario por defecto
+    const usuario = document.getElementById("usuario").value;
+    const contrasenya = document.getElementById("contrasenya").value;
+    const usuariosGuardados = {
+        // aquí se añadirían los usuarios y contraseñas guardados en la carpeta "usuarios"
+        admin: "1234",
+        tecnico: "5678",
+        wanda: "1111",
+    };
+    if (usuariosGuardados[usuario] === contrasenya) {
+        window.location.href = "pagina_de_carga.html"; // redirecciona a la página de carga si el usuario y contraseña son correctos
+    } else {
+        const popup = document.getElementById("popup");
+        popup.style.display = "block"; // muestra el popup si el usuario y contraseña son incorrectos
+        const cerrarPopup = document.getElementById("cerrar-popup");
+        cerrarPopup.addEventListener("click", () => {
+            popup.style.display = "none"; // cierra el popup cuando se clica en el botón de cerrar
+        });
+    }
+}
+</script>
 </body>
 </html>
