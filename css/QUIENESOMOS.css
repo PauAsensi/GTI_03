@@ -87,6 +87,20 @@ section button{
     border-radius: 5px;
 }
 
+@media(max-width:600px){
+    .QUIENESSOMOS{
+        max-width: 800px;
+        margin: 0 auto;
+        color: black;
+        padding: 5.5em 1em 4.5em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 1em;
+    }
 
 img{
     width: 8em;
