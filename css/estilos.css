@@ -2,22 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
-}
-
 :root{
-    --main-bg-color:#eef;
+    /* Colores genericos */
+    --main-bg-color: #ffffff;
     --main-fg-color:white;
     --contrast-bg-color:white;
     --contrast-fg-color:black;
     --accent-bg-color:#fc3d93;
     --accent-fg-color:#fffffe;
+
+    /* Colores del Menu*/
+    --bg-color:var(--contrast-bg-color);
+    --txt-color:var(--contrast-fg-color);
+    --hover-bg:var(--accent-bg-color);
+    --hover-txt:var(--accent-fg-color);
+    --menu-height:4.5rem;
 
     /* Colores de la Web */
     --naranja:#EDA145;
@@ -29,56 +28,147 @@
 
 }
 
+.oscuro{
+    --main-bg-color:black;
+    --main-fg-color:white;
+    --contrast-bg-color:black;
+    --contrast-fg-color:white;
+    --accent-bg-color:#fc3d93;
+    --accent-fg-color:#fffffe;
+    --verde-medio: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-image: url("../imagenes/LandingPage.jpeg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: var(--main-fg-color);
+header{
+    padding-bottom: 4.5em;
 }
 
-
-/*
-section:nth-child(even) {
-    background-color: color-mix(in srgb,
-    var(--main-fg-color) 10%,
-    var(--main-bg-color));
+footer{
+    padding-top: 4.5em;
 }
-*/
 
-
-section {
-    height: 100vh;
-    padding: 1rem;
+/*  MENU    */
+#main-menu{
+    background-color: var(--main-bg-color);
+    color: var(--contrast-fg-color);
+    height: var(--menu-height);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
     align-items: center;
+    justify-content: space-between;
+    padding:0.5em;
+    position: fixed;
+    width: 100%;
+
 }
 
-section h2{
-    font-family: "Lovelo Black", sans-serif;
-    font-size: 30px;
-    margin-bottom: .5em;
+#main-menu ul{
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: var(--menu-height);
+    left: 0;
+    width:100%;
+    transform: translateY(-50%) scaleY(0) ;
+    transition: .5s;
+    border-radius: 0em 0em 2em 2em;
+
 }
 
-section p{
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    margin-bottom:2em;
+#main-menu.activo ul{
+    transform: translateY(0) scaleY(1);
 }
 
-section button{
+#main-menu .opciones_menu{
     font-family: "Now Alt Black", sans-serif;
-    font-size: 20px;
-    width: 12em;
-    height:3em;
-    background-color: var(--naranja);
-    border: 0px;
-    border-radius: 5px;
+    color: var(--verde-medio);
+    font-size: 1.5em;
+    padding: .5em;
+    text-align: center;
+    border-bottom: 2px solid var(--verde-claro);
 }
+
+.hamburguesa{
+    width: 2em;
+    height: 2em;
+}
+
+.hamburguesa div{
+    background-color: var(--contrast-fg-color);
+    width: 2em;
+    height: .3em;
+    margin: .3em auto;
+}
+
+#main-menu.activo .hamburguesa div:nth-child(2){
+    opacity: 0;
+}
+
+#main-menu.activo .hamburguesa div:nth-child(1){
+    transform: translateY(.6em) rotate(45deg);
+}
+
+#main-menu.activo .hamburguesa div:nth-child(3){
+    transform: translateY(-.6em) rotate(-45deg);
+}
+
+#main-menu img {
+    width: 12em;
+    height: 8em;
+    margin: 14px 0px 0px 0px;
+}
+
+#cambiarModo{
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 1.5em;
+    padding: .9em 1.5em .9em 0em;
+    text-align: right;
+}
+
+#cambiarModo a{
+    border-radius: 2em;
+}
+
+#perfil{
+    padding-left: 6em;
+}
+/*  FIN MENU    */
+
+
+/*  FOOTER  */
+#footer{
+    --bg-color:var(--contrast-bg-color);
+    --txt-color:var(--contrast-fg-color);
+    --hover-bg:var(--accent-bg-color);
+    --hover-txt:var(--accent-fg-color);
+    --menu-height:4.2rem;
+}
+
+#footer section{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    height: var(--menu-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:0.5em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer i{
+    margin: 0px .5em 0px .5em;
+}
+/*  FIN FOOTER    */
