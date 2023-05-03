@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactanos</title>
+    <!--Css-->
+
+    <link rel="stylesheet" href="css/estilo-contactanos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/filtrosContactanos.js.js"></script>
+    <script src="js/cambiar-tema.js"></script>
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <nav id="main-menu">
+    <a href="#"><img src="imagenes/Logo_Claro.png" alt="Logo"></a>
+
+    <ul>
+        <li class="opciones_menu"><a href="#seccion1">INICIO</a></li>
+        <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
+        <li class="opciones_menu"><a href="#seccion3">CONTÁCTANOS</a></li>
+        <li class="opciones_menu"><a href="#seccion4">PREGUNTSA FRECUENTES</a></li>
+        <li class="opciones_menu"><a href="#seccion5">QUIENES SOMOS</a></li>
+        <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
+    </ul>
+
+    <a href="#"><i class="fa-solid fa-user fa-2xl"></i></a>
+
+    <div class="hamburguesa">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+</header>
+<!--Fin Menu-->
+
+<!--Script Menu-->
+<script src="js/main-menu.js"></script>
+<script src="js/cambiar-tema.js"></script>
+<!--Fin Script Menu-->
+
+<!-- formulario del contacto -->
+<section>
+    <h2>¡Ponte en contacto con nosotros!</h2>
+    <form>
+        <!--nombre y apellidos-->
+        <h3 for="nombre">Nombre y Apellidos*</h3><br>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <!--email-->
+        <h3 for="email">Email*</h3><br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               placeholder="correo@dominio.com" required>
+        <br>
+
+        <!--motivo-->
+        <h3>Motivo*</h3>
+       <!-- <input type="text" id="motivos" name="motivo" list="motivo" required>
+        <datalist id="motivo">
+            <option value="Reportar avería">
+            <option value="Garantía de mi huerto">
+            <option value="Olvide mi nombre de usuario">
+            <option value="Pérdida de la contraseña">
+            <option value="Otro">
+        </datalist>
+        <br>-->
+
+
+        <select name="motivo" id="motivos" required>
+            <option value="---">---</option>
+            <option value="Reportar avería">Reportar avería</option>
+            <option value="Garantía de mi huerto">Garantía de mi huerto</option>
+            <option value="Olvide mi nombre de usuario">Olvide mi nombre de usuario</option>
+            <option value="Pérdida de la contraseña">Pérdida de la contraseña</option>
+            <option value="Otro">Otro</option>
+        </select>
+        <br>
+
+        <!--mensaje-->
+        <h3 for="mensaje">Mensaje:</h3><br>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más..." required></textarea>
+        <br>
+
+        <!--botón enviar-->
+        <a class="boton-envio-form" onclick="mostrarPopup()">Enviar</a>
+        <div id="popup" style="display:none;">
+            <p>¡Formulario enviado correctamente!</p>
+            <button id="cerrar-popup">Cerrar</button>
+        </div>
+    </form>
+</section>
+<!-- fin del formulario del contacto -->
+
+<!--Footer-->
+<footer>
+    <nav id="footer">
+        <section>
+            <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+        </section>
+    </nav>
+    <!--Fin Footer-->
+</footer>
+</body>
+</html>
