@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contactanos</title>
+    <title>Formulario de compra</title>
     <!--Css-->
 
-    <link rel="stylesheet" href="css/estilo-contactanos.css">
+    <link rel="stylesheet" href="css/estilo-formularioDeCompra.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/filtrosContactanos.js"></script>
+    <script src="js/filtrosFormularioDeCompra.js"></script>
     <script src="js/cambiar-tema.js"></script>
 
     <!--Iconos-->
@@ -20,25 +20,25 @@
 
 <header>
     <nav id="main-menu">
-    <a href="#"><img src="imagenes/Logo_Claro.png" alt="Logo"></a>
+        <a href="#"><img src="imagenes/Logo_Claro.png" alt="Logo"></a>
 
-    <ul>
-        <li class="opciones_menu"><a href="#seccion1">INICIO</a></li>
-        <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
-        <li class="opciones_menu"><a href="#seccion3">CONTÁCTANOS</a></li>
-        <li class="opciones_menu"><a href="#seccion4">PREGUNTSA FRECUENTES</a></li>
-        <li class="opciones_menu"><a href="#seccion5">QUIENES SOMOS</a></li>
-        <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
-    </ul>
+        <ul>
+            <li class="opciones_menu"><a href="#seccion1">INICIO</a></li>
+            <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
+            <li class="opciones_menu"><a href="#seccion3">CONTÁCTANOS</a></li>
+            <li class="opciones_menu"><a href="#seccion4">PREGUNTSA FRECUENTES</a></li>
+            <li class="opciones_menu"><a href="#seccion5">QUIENES SOMOS</a></li>
+            <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
+        </ul>
 
-    <a href="#"><i class="fa-solid fa-user fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-user fa-2xl"></i></a>
 
-    <div class="hamburguesa">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</nav>
+        <div class="hamburguesa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
 </header>
 <!--Fin Menu-->
 
@@ -47,9 +47,9 @@
 <script src="js/cambiar-tema.js"></script>
 <!--Fin Script Menu-->
 
-<!-- formulario del contacto -->
+<!-- formulario del compra -->
 <section>
-    <h2>¡Ponte en contacto con nosotros!</h2>
+    <h2>¡Estás a nada de conseguir tu huerto!</h2>
     <form>
         <!--nombre y apellidos-->
         <h3 for="nombre">Nombre y Apellidos*</h3><br>
@@ -62,22 +62,31 @@
                placeholder="correo@dominio.com" required>
         <br>
 
-        <!--motivo-->
-        <h3>Motivo*</h3>
-
-        <select name="motivo" id="motivos" required>
-            <option value="---">---</option>
-            <option value="Reportar avería">Reportar avería</option>
-            <option value="Garantía de mi huerto">Garantía de mi huerto</option>
-            <option value="Olvide mi nombre de usuario">Olvide mi nombre de usuario</option>
-            <option value="Pérdida de la contraseña">Pérdida de la contraseña</option>
-            <option value="Otro">Otro</option>
-        </select>
+        <!--direccion de envio-->
+        <h3 for="direccion de envio">Dirección de envio*</h3><br>
+        <input type="text" id="direccion" name="direccion" required>
         <br>
 
-        <!--mensaje-->
-        <h3 for="mensaje">Mensaje:</h3><br>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más..." required></textarea>
+        <!--titular de la tarjeta-->
+        <h3 for="titular de la tarjeta">Titular de la tarjeta*</h3><br>
+        <input type="text" id="titular" name="titular" required>
+        <br>
+
+        <!--numero de tarjeta-->
+        <h3 for="numero de tarjeta">Número de tarjeta*</h3><br>
+        <input type="text" id="numero" name="numero" pattern="[0-9]{16}"
+               placeholder="#### #### #### ####" required>
+        <br>
+
+        <!--fecha de caducidad-->
+        <h3 for="fecha de caducidad">Fecha de caducidad*</h3><br>
+        <input type="month" id="caducidad" name="caducidad" required>
+        <br>
+
+        <!--cvv-->
+        <h3 for="cvv">Cvv*</h3><br>
+        <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}"
+               placeholder="###" required>
         <br>
 
         <!--botón enviar-->
