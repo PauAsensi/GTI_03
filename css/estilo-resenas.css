@@ -34,21 +34,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     background-color: var(--verde-medio);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: var(--main-fg-color);
 }
 
-
-/*
-section:nth-child(even) {
-    background-color: color-mix(in srgb,
-    var(--main-fg-color) 10%,
-    var(--main-bg-color));
-}
-*/
 
 
 section {
@@ -59,8 +49,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: center;
-    text-align: center;
     align-items: center;
 }
 
@@ -69,6 +57,7 @@ section h2 {
     font-size: 30px;
     margin-top: 2em;
     margin-bottom: 1.7rem;
+    color: var(--main-fg-color);
 }
 
 section p {
@@ -79,7 +68,7 @@ section p {
     text-align: justify;
 }
 
-h4 {
+section h4 {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     margin-bottom: 2em;
@@ -94,33 +83,38 @@ section button {
     width: auto;
     height: auto;
     background-color: var(--naranja);
-    border: 0px;
+    border: 0;
     border-radius: 5px;
     padding: 1em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--main-bg-color);
 }
 
-button:hover {
+section button:hover {
     background-color:var(--marron-claro);
 }
 
 /* Estilos de las cajas de las reseñas */
-.reviews-container {
+section article{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 auto;
     max-width: 1rem;
     min-width: 100%;
 }
 
-.review {
+section article:last-child {
+    margin-bottom: 80px;
+}
+
+section article article {
     background-color: var(--main-fg-color);
     border: 1px solid var(--main-fg-color);
     border-radius: 20px;
-    box-shadow: 0px 0px 2px var(--contrast-fg-color);
+    box-shadow: 0 0 2px var(--contrast-fg-color);
     margin-bottom: 20px;
     padding: 20px;
     width: 100%;
@@ -128,44 +122,74 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.review:last-child {
-    margin-right: 0;
-}
 
-.user-info {
+.user-info{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
 }
 
-.user-info img {
+section article article div img{
     border-radius: 50%;
     height: 50px;
     margin-right: 10px;
     width: 50px;
+
+    display: flex;
+    align-items: flex-start;
 }
 
-.user-info h4 {
+section article article div h4 {
     margin-right: 5px;
     color: var(--contrast-fg-color);
     font-size: 14px;
 }
 
 
-.user-review p {
+section article article div div p {
     margin-bottom: 10px;
     color: var(--contrast-fg-color);
     font-size: 14px;
 }
 
-.rating {
-    align-items: center;
+section article article div div {
+    align-items: flex-start;
     display: flex;
     margin-left: auto;
 }
 
-.rating .estrella {
+section article article div div span {
     color: var(--naranja);
     font-size: 20px;
     margin-right: 5px;
+}
+
+
+/* Estilos para dispositivos móviles */
+section article {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    section article{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section h2 {
+        text-align: center;
+    }
 }
