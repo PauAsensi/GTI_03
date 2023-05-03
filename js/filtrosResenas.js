@@ -1,8 +1,8 @@
 // Obtener los botones de ordenamiento
-const btnSortDateDescending = document.querySelector('#btn-sort-date-descending');
-const btnSortDateAscending = document.querySelector('#btn-sort-date-ascending');
-const btnSortRatingDescending = document.querySelector('#btn-sort-rating-descending');
-const btnSortRatingAscending = document.querySelector('#btn-sort-rating-ascending');
+const btnSortDateDescending = document.querySelector('#btn-fecha-descendente');
+const btnSortDateAscending = document.querySelector('#btn-fecha-ascendente');
+const btnSortRatingDescending = document.querySelector('#btn-resena-descendente');
+const btnSortRatingAscending = document.querySelector('#btn-resena-ascendente');
 
 // Obtener el contenedor de las reseñas
 const reviewsContainer = document.querySelector('.reviews-container');
