@@ -1,5 +1,5 @@
 /*---- Elegir provincia ----*/
-/*
+
 $(document).ready(function() {
     // Detectar cuando se escribe en el campo de texto
     $('#provincia-autocomplete').on('input', function() {
@@ -19,7 +19,6 @@ $(document).ready(function() {
     });
 });
 
-*/
 
 /*--------- Mostrar el popup ------*/
 function mostrarPopup() {
@@ -33,5 +32,3 @@ function cerrarPopup() {
     const popup = document.getElementById("popup");
     popup.style.display = "none";
 }
-
-
