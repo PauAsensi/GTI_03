@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu Hamburguesa</title>
+    <title>Admin Page</title>
   <!--Css-->
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/main-menu.css">
@@ -50,49 +50,115 @@
 
 <!--Contenido-->
 <main>
-<h1>Administrador</h1>
+  <h1>ADMINISTRADOR</h1>
   <div>
-    <section class="wanda">
+    <section class="usuarios">
       <img src="avatares/Wanda.jpg" id="wanda">
       <h2>Wanda</h2>
-      <h3>●online</h3>
-      <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      <section class="estados">
+        <h3 class="estado online">●online</h3>
+        <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      </section>
     </section>
-    <section class="2">
+    <section class="usuarios">
       <img src="avatares/JOSEP.jpg" id="josep">
       <h2>Josep</h2>
-      <h3>●offline</h3>
-      <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      <section class="estados">
+        <h3 class="estado offline">●offline</h3>
+        <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      </section>
     </section>
-    <section>
+    <section class="usuarios">
       <img src="avatares/CLAUDIO.jpg" id="claudio">
       <h2>Claudio</h2>
-      <h3>●online</h3>
-      <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      <section class="estados">
+        <h3 class="estado online">●online</h3>
+        <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      </section>
     </section>
-    <section>
+    <section class="usuarios">
       <img src="avatares/CARLOS.jpg">
       <h2>Carlos</h2>
-      <h3>●online</h3>
-      <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      <section class="estados">
+        <h3 class="estado online">●online</h3>
+        <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      </section>
     </section>
-    <section>
+    <section class="usuarios">
       <img src="avatares/MARTA.jpg">
       <h2>Marta</h2>
-      <h3>●offline</h3>
-      <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      <section class="estados">
+        <h3 class="estado offline">●offline</h3>
+        <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      </section>
     </section>
-    <section>
+    <section class="usuarios">
       <img src="avatares/STEFANI.jpg">
       <h2>Stefani</h2>
-      <h3>●offline</h3>
-      <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
-      <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      <section class="estados">
+        <h3 class="estado offline">●offline</h3>
+        <a href="#"><i class="fa-solid fa-pen-to-square fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-trash-can fa-2xl"></i></a>
+      </section>
+    </section>
+  </div>
+  <div>
+    <section>
+
+      <head>
+        <meta charset="UTF-8">
+        <title>menu responsive</title>
+        <style>
+          nav{
+            background-color: #C2D9B4;
+            max-width: 250px;
+            margin: 0 auto;
+          }
+          nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+          }
+          nav ul li{
+            flex: 1 1 0em;
+            text-align: center;
+          }
+          nav ul li a{
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            display: block;
+            text-align-all: center;
+          }
+          nav ul li a:hover{
+            background: #618577;
+          }
+          @media (max-width: 90px) {
+            nav ul{
+              flex-direction: column;
+            }
+            nav ul a{
+              text-align: center;
+            }
+          }
+        </style>
+      </head>
+      <body>
+      <nav>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+      </nav>
+      </body>
     </section>
   </div>
 </main>
