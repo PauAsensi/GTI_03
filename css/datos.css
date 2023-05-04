@@ -47,6 +47,10 @@ main{
     text-align: center;
 }
 
+main h1{
+    margin-top: 0.7em;
+    
+}
 
 
 /*Boton on and off a la izquierda*/
@@ -64,15 +68,40 @@ main{
     object-fit: cover;
     margin-top: 30px;
     border-radius: 19%;
-    
-   
 }
 
 .seccion3 img{
     height: 20em;
     justify-content: center;
-
 }
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+
+  /* Move button to the center */
+  #onoff {
+    margin-left: 20em;
+    margin-right: 0;
+  }
+  
+  /* Adjust spacing between buttons and images */
+.seccion3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  /* Reduce height of button and image */
+  .seccion3 button, .seccion3 img {
+    height: 10em;
+  }
+  
+}
+
+
 
 
 
