@@ -1,9 +1,5 @@
 <!--DATOS-->
-<!--TENGO QUE:
--ARREGLAR LOS BOTONES EN LA VERSION MOVIL(QUE ESTEN ALADO)
-- Hacer que la grafica sea interactiva(lo mas dificil)
--Darle diseño al on y off.
--->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +50,7 @@
     <section>
 
         <section class="seccion1">
-            <h1>HUMEDAD</h1>
+            <h2>HUMEDAD</h2>
 
               <div id="boton"><!--AQUI VA EL BOTON ON/OFF-->
                 <input type="checkbox" id="toggle1" checked onclick="cambiaImagen()">
@@ -66,10 +62,8 @@
         </section>
         
         <section class="seccion2"><!--AQUI VA LA GRAFICA-->
-            <img src="imagenes/DATOS.png" alt="datostemporal">
-            <img alt="imagen" src="imagenes/APAGADO.png" id="apagado">
-
-        </section>
+          <img alt="imagen" src="imagenes/DATOS.png" id="apagado">
+      </section>
 
         <section class="seccion3"><!--AQUI VAN LOS BOTONES DE ABAJO-->
             <button href="#"><img src="imagenes/Maximos.png" alt="maximos"></button>
@@ -83,20 +77,26 @@
 
 <script>
 
-  function cambiaImagen() {
-    var img = document.getElementById("apagado");
-    if (img.style.display != "none") {
-      img.style.display = "none";
-    } else {
-      img.style.display = "block";
-    }
+window.onload = function() {
+  var img = document.getElementById("apagado");
+  img.setAttribute("src", "imagenes/DATOS.png");
+}
+
+function cambiaImagen() {
+  var img = document.getElementById("apagado");
+  if (img.getAttribute("src") == "imagenes/APAGADO.png") {
+    img.setAttribute("src", "imagenes/DATOS.png");
+  } else {
+    img.setAttribute("src", "imagenes/APAGADO.png");
   }
+}
+
 </script>
 
 
 <!--EMPIEZA EL FOOTER-->
 <footer>
-  <hr>
+  
     <nav id="footer">
       <section>
         <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl"></i></a>
