@@ -18,6 +18,7 @@
   <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
 </head>
 
+<!--AQUI EMPIEZA MENU-->
 <header>
     <nav id="main-menu">
       <a href="index.html"><img src="imagenes/logo/Logo modo claro.png" alt="Logo"></a>
@@ -39,26 +40,38 @@
     </nav>
   </header>
   <hr>
+<!--AQUI ACABA MENU-->
 
 
 <body>
 
+<!--JAVASCRIPT-->
 <script src="js/main-menu.js"></script>
 <script src="/js/cambiar-tema.js"></script>
+
 
 <main>  
     <section>
 
         <section class="seccion1">
-            <h1>HUMEDAD</h1> 
-            <button id="onoff"> ON/OFF </button>
+            <h1>HUMEDAD</h1>
+
+              <div id="boton"><!--AQUI VA EL BOTON ON/OFF-->
+                <input type="checkbox" id="toggle1" checked onclick="cambiaImagen()">
+                <label for="toggle1">.</label>
+      
+
+              </div>
+            
         </section>
         
-        <section class="seccion2">
+        <section class="seccion2"><!--AQUI VA LA GRAFICA-->
             <img src="imagenes/DATOS.png" alt="datostemporal">
+            <img alt="imagen" src="imagenes/APAGADO.png" id="apagado">
+
         </section>
 
-        <section class="seccion3">
+        <section class="seccion3"><!--AQUI VAN LOS BOTONES DE ABAJO-->
             <button href="#"><img src="imagenes/Maximos.png" alt="maximos"></button>
             <button href="#"><img src="imagenes/Estadisiticas.png" alt="Estadisiticas"></button>
         </section>
@@ -68,7 +81,20 @@
 
 </body>
 
+<script>
 
+  function cambiaImagen() {
+    var img = document.getElementById("apagado");
+    if (img.style.display != "none") {
+      img.style.display = "none";
+    } else {
+      img.style.display = "block";
+    }
+  }
+</script>
+
+
+<!--EMPIEZA EL FOOTER-->
 <footer>
   <hr>
     <nav id="footer">
