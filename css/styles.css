@@ -222,3 +222,24 @@ img{
     height: 5em;
     margin-bottom: 15px;
 }
+
+#olvidado-contrasena {
+    font-size: small;
+    font-family: Montserrat, sans-serif;
+    color:#598072;
+    background-color:var(--accent-fg-color);
+    width: 15em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    float: left;
+    height: 3em;
+}
+
+
+#olvidado-contrasena:hover {
+    font-size: small;
+    font-family: Montserrat, sans-serif;
+    color:black;
+    background-color:var(--accent-fg-color);
+}
