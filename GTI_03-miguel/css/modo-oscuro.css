@@ -1,0 +1,8 @@
+.oscuro{
+    --main-bg-color:black;
+    --main-fg-color:white;
+    --contrast-bg-color:black;
+    --contrast-fg-color:white;
+    --accent-bg-color:#fc3d93;
+    --accent-fg-color:#fffffe;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page</title>
+  <!--Css-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/main-menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modo-oscuro.css">
+  <link rel="stylesheet" href="css/perfiles.css">
+
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--Menu-->
+<header>
+  <nav id="main-menu">
+    <a href="#"><img src="logos/Logo_Claro.png" alt="Logo"></a>
+
+    <ul>
+      <li class="opciones_menu"><a href="#seccion1">INICIO</a></li>
+      <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
+      <li class="opciones_menu"><a href="#seccion3">CONTÁCTANOS</a></li>
+      <li class="opciones_menu"><a href="#seccion4">PREGUNTSA FRECUENTES</a></li>
+      <li class="opciones_menu"><a href="#seccion5">QUIENES SOMOS</a></li>
+      <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
+    </ul>
+
+    <a href="#"><i class="fa-solid fa-user fa-2xl"></i></a>
+
+    <div class="hamburguesa">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+<!--Fin Menu-->
+
+<!--Script Menu-->
+<script src="js/main-menu.js"></script>
+<script src="js/cambiar-tema.js"></script>
+<!--Fin Script Menu-->
+
+<!--Contenido-->
+<section>
+  <h2>Perfil</h2>
+  <form>
+    <img src="avatares/Wanda.jpg" id="wanda">
+    <img src="iconos/editar-modo-claro.jpg" id="editar">
+
+    <!--nombre y apellidos-->
+    <h3 for="nombre">Nombre completo</h3><br>
+    <input type="text" id="nombre" name="nombre"
+           placeholder="Wanda Mendoza" disabled>
+    <br>
+
+    <!--email-->
+    <h3 for="email">Dirección de Correo</h3><br>
+    <input type="email" id="email" name="email"
+           placeholder="wandamen57@gmail.com" disabled>
+    <br>
+
+    <!--n de huertos-->
+    <h3 for="numero de huertos">Número de Huertos</h3><br>
+    <input type="text" id="huertos" name="huertos"
+           placeholder="2 Huertos" disabled>
+    <br>
+
+    <!--dirección-->
+    <h3 for="dirección">Dirección</h3><br>
+    <input type="text" id="direccion" name="direccion"
+           placeholder="Plaza Rosa de los Vientos, 37, Playa Gandía" disabled>
+    <br>
+
+  </form>
+  <!--Fin Contenido-->
+
+<!--Footer-->
+<footer>
+  <nav id="footer">
+    <section>
+      <a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+    </section>
+  </nav>
+<!--Fin Footer-->
+</footer>
+</body>
+</html>
