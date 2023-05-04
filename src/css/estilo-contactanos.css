@@ -1,0 +1,179 @@
+html {
+    scroll-behavior: smooth; /para que la pantalla no baje bruscamente/
+}
+
+body {
+    background-color: var(--verde-claro); /color de fondo/
+}
+
+section {
+    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+section h2 {
+    font-family: "Now Black", sans-serif;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: var(--contrast-fg-color);
+}
+
+section form{
+    width: 90%;
+}
+
+section form h3 {
+    display: block; /* para que cada label se muestre en una línea nueva */
+    font-weight: bold;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: -0.8em;
+}
+
+section form input {
+    display: block; /* para que cada input y textarea se muestre en una línea nueva */
+    width: 95%;
+    padding: 0.625em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 3em;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.625em;
+}
+
+section form input:focus {
+    outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
+    border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
+}
+
+#motivos {
+    display: block; /* para que cada input y textarea se muestre en una línea nueva */
+    width: 95%;
+    padding: 0.625em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 3em;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.625em;
+    margin-top: 1.15em;
+    text-align: justify;
+}
+
+#motivos:focus {
+    outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
+    border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
+}
+
+section form textarea {
+    height: 8em;
+    display: block; /* para que cada input y textarea se muestre en una línea nueva */
+    width: 95%;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+section form textarea:focus {
+    outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
+    border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
+}
+
+.boton-envio-form {
+    float: right;
+    color: white;
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 1.25em;
+    width: 12em;
+    height: 3em;
+    background-color: var(--naranja);
+    border: 0;
+    border-radius: 1.25em;
+    padding-top: .9em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.boton-envio-form:hover {
+    background-color: var(--marron-claro);
+}
+
+@media (max-width: 767px) {
+    .boton-envio-form {
+        width: 8em;
+        height: 3em;
+    }
+}
+
+#cerrar-popup{
+    color:var(--main-fg-color);
+}
+
+.cerrar-popup:hover {
+    background-color: var(--marron-claro);
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    z-index: 9999;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    color: var(--contrast-bg-color);
+    text-align: center;
+    border-radius: 20px;
+}
+
+#popup button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
+    background-color: var(--naranja);
+    border: 0;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 0.313em;
+    color: var(--main-bg-color);
+}
+
+#popup button:hover {
+    background-color: var(--marron-claro);
+}
+
+#popup p {
+    font-family: Montserrat, sans-serif;
+    font-size: 0.75em;
+    text-align: justify;
+    color: var(--contrast-fg-color);
+}

@@ -1,0 +1,55 @@
+body{
+    background-color: var(--verde-claro);
+    text-align: center;
+}
+
+.nostros{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.5em 0em 1em 0em;
+    font-weight: bold;
+}
+
+.fotos{
+    width: 5em;
+    height:5em;
+    border-radius: 5em;
+}
+
+div h1{
+    font-size: 2em;
+    font-family: "Now Alt ", sans-serif;
+    padding: 0em 0em .5em 0em;
+}
+
+div h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    padding: .5em 0em 1em 0em;
+}
+div h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding: .5em 0em .5em 0em;
+}
+
+div p{
+    padding: 0em 2em 2em 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+button{
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 18px;
+    width: 20em;
+    height:3em;
+    background-color: var(--naranja);
+    border: 0px;
+    border-radius: 5px;
+    margin:1em 0em 2em 0em;
+}
+
+button:hover{
+    opacity: 50%;
+}
+

@@ -1,0 +1,39 @@
+body{
+    background-image: url("../imagenes/LandingPage.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: var(--main-fg-color);
+}
+
+section {
+    height: 83.5vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+section h2{
+    font-family: "Lovelo Black", sans-serif;
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+section p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    margin-bottom:2em;
+}
+
+section button{
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 20px;
+    width: 12em;
+    height:3em;
+    background-color: var(--naranja);
+    border: 0px;
+    border-radius: 5px;
+}
