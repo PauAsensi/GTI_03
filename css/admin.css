@@ -1,49 +1,63 @@
-
-
-section{
-    padding-top: 2em;
+.usuarios{
+    background-color: #D7D7D7;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte superior */
-    border-bottom: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte inferior */
-    padding: 10px; /* espacio dentro de la sección */
+    border-bottom: 0.625em solid #AAAAAA; /* borde de 1 píxel y estilo sólido en la parte superior */
+    padding: 0.625em; /* espacio dentro de la sección */
 }
-
-
+.estados{
+    border: 0em solid #AAAAAA; /* borde de 1 píxel y estilo sólido en la parte superior */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: .5em;
+}
 h1{
-    font-family: "Now Alt Black", sans-serif;
-    color: #598072;
-    font-size: 1.5625rem;
+    font-family:"Now Alt Black", sans-serif;
+    color: #333333;
+    font-size: 1.5625em;
+    text-align: center; /* centra horizontalmente el contenido */
+    margin: 1.5em;
+}
+section h2{
+    font-family: "Montserrat", sans-serif;
 }
 h2{
-    font-family: "Now Alt Black", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #598072;
-    font-size: 1rem;
+    font-size: 1em;
+}
+.estado {
+    font-weight: bold;
+}
+.estado.online {
+    color: green;
+}
+.estado.offline {
+    color: red;
 }
 h3{
-    font-family: "Now Alt Black", sans-serif;
-    font-size: 20px;
-    color: #03A113;
-    width: 4.5em;
-    height:1.5em;
-    border-radius: 1em;
-    border-top: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte superior */
-    border-bottom: 1px solid black; /* borde de 1 píxel y estilo sólido en la parte inferior */
-    padding: 10px; /* espacio dentro de la sección */
-    border-top-left-radius: 10px; /* borde redondeado en la esquina superior izquierda */
-    border-top-right-radius: 10px; /* borde redondeado en la esquina superior derecha */
-    border-bottom-left-radius: 10px; /* borde redondeado en la esquina inferior izquierda */
-    border-bottom-right-radius: 10px; /* borde redondeado en la esquina inferior derecha */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    font-family: "Montserrat", sans-serif;;
+    font-size: 1.25em;
+    background-color: white;
+    border-top: 1px solid white; /* borde de 1 píxel y estilo sólido en la parte superior */
+    border-bottom: 1px solid white; /* borde de 1 píxel y estilo sólido en la parte inferior */
+    padding: 5px; /* espacio dentro de la sección */
+    border-radius: 0.625em;
     text-align: center; /* centra horizontalmente el contenido */
-    line-height: 1.5; /* centra verticalmente el contenido */
+    line-height: 1; /* centra verticalmente el contenido */
 }
 img{
-    width: 3.125em;
+    width: 3.5em;
     height: 3.875em;
+    border-radius: 0.625em;
 }
-{
-    width: 55em;
-    height: 3.875em;
+a{
+    margin-left: 1em;
 }
