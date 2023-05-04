@@ -6,12 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contactanos</title>
-    <!--Css-->
+    <!--Enlace css-->
 
-    <link rel="stylesheet" href="css/estilo-contactanos.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/filtrosContactanos.js"></script>
-    <script src="js/cambiar-tema.js"></script>
+    <link rel="stylesheet" href="css/main-menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/estilo-contactanos.css">
 
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
@@ -19,6 +20,7 @@
 <body>
 
 <header>
+    <!--empieza menu-->
     <nav id="main-menu">
     <a href="#"><img src="imagenes/Logo_Claro.png" alt="Logo"></a>
 
@@ -47,41 +49,47 @@
 <script src="js/cambiar-tema.js"></script>
 <!--Fin Script Menu-->
 
-<!-- formulario del contacto -->
+<!-- Empieza formulario del contacto -->
 <section>
     <h2>¡Ponte en contacto con nosotros!</h2>
     <form>
         <!--nombre y apellidos-->
-        <h3 for="nombre">Nombre y Apellidos*</h3><br>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
+        <div>
+            <h3 for="nombre">Nombre y Apellidos*</h3><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
 
         <!--email-->
-        <h3 for="email">Email*</h3><br>
-        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-               placeholder="correo@dominio.com" required>
-        <br>
+        <div>
+            <h3 for="email">Email*</h3><br>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="correo@dominio.com" required>
+        </div>
 
         <!--motivo-->
-        <h3>Motivo*</h3>
-
-        <select name="motivo" id="motivos" required>
-            <option value="---">---</option>
-            <option value="Reportar avería">Reportar avería</option>
-            <option value="Garantía de mi huerto">Garantía de mi huerto</option>
-            <option value="Olvide mi nombre de usuario">Olvide mi nombre de usuario</option>
-            <option value="Pérdida de la contraseña">Pérdida de la contraseña</option>
-            <option value="Otro">Otro</option>
-        </select>
-        <br>
+        <div>
+            <h3>Motivo*</h3>
+            <select name="motivo" id="motivos" required>
+                <option value="---">---</option>
+                <option value="Reportar avería">Reportar avería</option>
+                <option value="Garantía de mi huerto">Garantía de mi huerto</option>
+                <option value="Olvide mi nombre de usuario">Olvide mi nombre de usuario</option>
+                <option value="Pérdida de la contraseña">Pérdida de la contraseña</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
 
         <!--mensaje-->
-        <h3 for="mensaje">Mensaje:</h3><br>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más..." required></textarea>
-        <br>
+        <div>
+            <h3 for="mensaje">Mensaje:</h3><br>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más..." required></textarea>
+        </div>
 
         <!--botón enviar-->
-        <button type="submit" class="boton-envio-form">Enviar</button>
+        <div>
+            <button type="submit" class="boton-envio-form">Enviar</button>
+        </div>
+
         <div id="popup" class="popup" style="display: none">
             <div class="popup-contenido">
                 <p>Usuario o contraseña incorrectos</p><br>
@@ -91,7 +99,7 @@
         </div>
     </form>
 </section>
-<!-- fin del formulario del contacto -->
+<!-- Fin del formulario del contacto -->
 
 <!--Footer-->
 <footer>

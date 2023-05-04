@@ -6,19 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de compra</title>
-    <!--Css-->
+    <!--Enlace css-->
 
-    <link rel="stylesheet" href="css/estilo-formularioDeCompra.css">
+
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/filtrosFormularioDeCompra.js"></script>
-    <script src="js/cambiar-tema.js"></script>
-
+    <link rel="stylesheet" href="css/main-menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/estilo-formularioDeCompra.css">
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
+    <!--Empieza menu-->
     <nav id="main-menu">
         <a href="#"><img src="imagenes/Logo_Claro.png" alt="Logo"></a>
 
@@ -47,50 +49,54 @@
 <script src="js/cambiar-tema.js"></script>
 <!--Fin Script Menu-->
 
-<!-- formulario del compra -->
+<!-- Empieza formulario del compra -->
 <section>
     <h2>¡Estás a nada de conseguir tu huerto!</h2>
     <form>
         <!--nombre y apellidos-->
-        <h3 for="nombre">Nombre y Apellidos*</h3><br>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
+        <div>
+            <h3 for="nombre">Nombre y Apellidos*</h3><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
 
         <!--email-->
-        <h3 for="email">Email*</h3><br>
-        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-               placeholder="correo@dominio.com" required>
-        <br>
+        <div><h3 for="email">Email*</h3><br>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                   placeholder="correo@dominio.com" required>
+        </div>
+
 
         <!--direccion de envio-->
-        <h3 for="direccion de envio">Dirección de envio*</h3><br>
-        <input type="text" id="direccion" name="direccion" required>
-        <br>
+        <div><h3 for="direccion de envio">Dirección de envio*</h3><br>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
 
         <!--titular de la tarjeta-->
-        <h3 for="titular de la tarjeta">Titular de la tarjeta*</h3><br>
-        <input type="text" id="titular" name="titular" required>
-        <br>
+        <div>
+            <h3 for="titular de la tarjeta">Titular de la tarjeta*</h3><br>
+            <input type="text" id="titular" name="titular" required>
+        </div>
 
         <!--numero de tarjeta-->
-        <h3 for="numero de tarjeta">Número de tarjeta*</h3><br>
-        <input type="text" id="numero" name="numero" pattern="[0-9]{16}"
-               placeholder="#### #### #### ####" required>
-        <br>
+        <div><h3 for="numero de tarjeta">Número de tarjeta*</h3><br>
+            <input type="text" id="numero" name="numero" pattern="[0-9]{16}"
+                   placeholder="#### #### #### ####" required>
+        </div>
 
         <!--fecha de caducidad-->
-        <h3 for="fecha de caducidad">Fecha de caducidad*</h3><br>
-        <input type="month" id="caducidad" name="caducidad" required>
-        <br>
+        <div><h3 for="fecha de caducidad">Fecha de caducidad*</h3><br>
+            <input type="month" id="caducidad" name="caducidad" required>
+        </div>
 
         <!--cvv-->
-        <h3 for="cvv">Cvv*</h3><br>
-        <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}"
-               placeholder="###" required>
-        <br>
+        <div><h3 for="cvv">Cvv*</h3><br>
+            <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}"
+                   placeholder="###" required>
+        </div>
 
         <!--botón enviar-->
-        <button type="submit" class="boton-envio-form">Enviar</button>
+        <div><button type="submit" class="boton-envio-form">Enviar</button></div>
+
         <div id="popup" class="popup" style="display: none">
             <div class="popup-contenido">
                 <p>Usuario o contraseña incorrectos</p><br>
@@ -100,7 +106,7 @@
         </div>
     </form>
 </section>
-<!-- fin del formulario del contacto -->
+<!-- Fin del formulario del contacto -->
 
 <!--Footer-->
 <footer>
