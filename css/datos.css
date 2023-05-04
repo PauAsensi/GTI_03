@@ -83,7 +83,7 @@ div label::before{
     top: 50%;
     left: 5px ;
     transform: translateY(-50%);
-    content: "OFF" ;
+    content: "" ;
     color: #2e2e2e;
     font-size: 0.7em;
     display: block;
@@ -100,7 +100,7 @@ div input:checked + label{
 }
 
 div input:checked + label:before{
-    content: "ON";
+    content: "";
     color: #2e2e2e;
     font-size: 0.6em;
     left: 50px;
