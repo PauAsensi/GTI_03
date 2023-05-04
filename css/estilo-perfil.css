@@ -48,7 +48,9 @@ body {
 
 section {
     height: 100%;
-    padding: 1em;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -60,7 +62,7 @@ section {
 section h2 {
 font-family: "Now Black", sans-serif;
     font-size: 2em;
-    margin-top: 1em;
+    margin-top: 0em;
     margin-bottom: 1em;
     color: var(--contrast-fg-color);
 }
@@ -70,7 +72,22 @@ section form{
     text-align: center;
 }
 
+#wanda{
+    width: 9.125em;
+    height: 9.125em;
+    border-radius: 5em;
+    margin-bottom: 3em;
+}
+
+#editar{
+    width: 3.313em; position: absolute;
+    top: 12.5em;
+    right: 3.5em;
+    transform: translate(50%, -50%);
+}
+
 section form h3 {
+    display: block; /* para que cada label se muestre en una línea nueva */
     font-weight: bold;
     color: var(--contrast-fg-color);
     font-family: Montserrat, sans-serif;
@@ -93,82 +110,4 @@ section form div input {
     font-family: Montserrat, sans-serif;
     font-size: 1em;
     align-items: center;
-}
-
-section form input:focus {
-    outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
-    border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
-}
-
-.boton-envio-form {
-    float: right;
-    color: white;
-    font-family: "Now Alt Black", sans-serif;
-    font-size: 1.25em;
-    width: 12em;
-    height: 3em;
-    background-color: var(--naranja);
-    border: 0;
-    border-radius: 1.25em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.boton-envio-form:hover {
-    background-color: var(--marron-claro);
-}
-
-@media (max-width: 767px) {
-    .boton-envio-form {
-        width: 8em;
-        height: 3em;
-    }
-}
-
-#cerrar-popup{
-    color:var(--main-fg-color);
-}
-
-.cerrar-popup:hover {
-    background-color: var(--marron-claro);
-}
-
-#popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1em;
-    z-index: 9999;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5em;
-    color: var(--contrast-bg-color);
-    text-align: center;
-    border-radius: 20px;
-}
-
-#popup button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.75em;
-    width: auto;
-    height: auto;
-    background-color: var(--naranja);
-    border: 0;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 0.313em;
-    color: var(--main-bg-color);
-}
-
-#popup button:hover {
-    background-color: var(--marron-claro);
-}
-
-#popup p {
-    font-family: Montserrat, sans-serif;
-    font-size: 0.75em;
-    text-align: justify;
-    color: var(--contrast-fg-color);
 }

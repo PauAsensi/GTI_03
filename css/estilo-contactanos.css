@@ -39,18 +39,16 @@
 }
 
 html {
-    scroll-behavior: smooth; /para que la pantalla no baje bruscamente/
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--verde-claro); /color de fondo/
+    background-color: var(--verde-claro);
 }
 
 section {
     height: 100%;
-    padding-top: 3em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -59,64 +57,61 @@ section {
     align-items: center;
 }
 
-section h2 { /titulo/
+section h2 {
 font-family: "Now Black", sans-serif;
     font-size: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     color: var(--contrast-fg-color);
 }
 
 section form{
     width: 90%;
+    text-align: center;
 }
 
 section form h3 {
-    display: block; /* para que cada label se muestre en una línea nueva */
     font-weight: bold;
     color: var(--contrast-fg-color);
     font-family: Montserrat, sans-serif;
     font-size: 1em;
     text-align: justify;
-    margin-left: 1em;
+    margin-left: 2em;
     margin-right: 1em;
     margin-bottom: -0.8em;
 }
 
-section form input {
-    display: block; /* para que cada input y textarea se muestre en una línea nueva */
+section form div input {
     width: 95%;
-    padding: 0.625em;
-    border: 1px solid #ccc;
-    border-radius: 10px;
     height: 3em;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    border: 2px solid var(--verde-medio);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.58);
     color: var(--contrast-fg-color);
     font-family: Montserrat, sans-serif;
     font-size: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 0.625em;
+    align-items: center;
 }
 
-section form input:focus {
+section form div input:focus {
     outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
     border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
 }
 
 #motivos {
-    display: block; /* para que cada input y textarea se muestre en una línea nueva */
     width: 95%;
-    padding: 0.625em;
-    border: 1px solid #ccc;
-    border-radius: 10px;
     height: 3em;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    margin-top: 1.15em;
+    border: 2px solid var(--verde-medio);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.58);
     color: var(--contrast-fg-color);
     font-family: Montserrat, sans-serif;
     font-size: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 0.625em;
-    margin-top: 1.15em;
     text-align: justify;
 }
 
@@ -125,22 +120,20 @@ section form input:focus {
     border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
 }
 
-section form textarea {
-    height: 8em;
-    display: block; /* para que cada input y textarea se muestre en una línea nueva */
+section form div textarea {
     width: 95%;
+    height: 8em;
     padding: 0.625em;
     margin-bottom: 0.625em;
-    border: 1px solid #ccc;
+    border: 2px solid var(--verde-medio);
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.58);
     color: var(--contrast-fg-color);
     font-family: Montserrat, sans-serif;
     font-size: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
-section form textarea:focus {
+section form div textarea:focus {
     outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
     border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
 }
