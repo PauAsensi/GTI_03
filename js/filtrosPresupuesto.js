@@ -19,6 +19,17 @@ $(document).ready(function() {
     });
 });
 
+function validarFormulario() {
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;    
+    const provincia = document.getElementById("provincia").value;
+
+    if (nombre === "" || email === "" || provincia === "") {
+        alert("Por favor, rellene todos los campos obligatorios.");
+    } else {
+        mostrarPopup();
+    }
+}
 
 /*--------- Mostrar el popup ------*/
 function mostrarPopup() {
