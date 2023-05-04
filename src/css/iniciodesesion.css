@@ -2,8 +2,31 @@ body {
     background-color: var(--verde-claro);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+section div {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-fg-color);
+    border-radius: 20px;
+    box-shadow: 0 0 2px var(--contrast-fg-color);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section {
     height: 100vh;
+    padding-top: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
@@ -17,7 +40,7 @@ section {
 section h2 {
     font-family: "Now Black", sans-serif;
     font-size: 1.7em;
-    margin-top: 1.5em;
+    margin-top: 2em;
     margin-bottom: 2rem;
     color: var(--contrast-fg-color);
 }
@@ -49,34 +72,12 @@ section form input {
     margin-right: 1em;
 }
 
-section form input:focus {
-    outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
-    border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
-}
-
-section form datalist option:checked {
-    font-weight: normal;
-}
-
-section form textarea {
-    height: 8em;
-    display: block; /* para que cada input y textarea se muestre en una línea nueva */
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    color: var(--contrast-fg-color);
-    font-family: Montserrat, sans-serif;
-    font-size: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
 
 section form textarea:focus {
     outline: none; /* para quitar el borde que aparece al hacer focus en un input o textarea */
     border-color: var(--naranja); /* para cambiar el color del borde al hacer focus */
 }
+
 
 section button {
     font-family: "Now Alt Black", sans-serif;
@@ -86,24 +87,14 @@ section button {
     background-color: var(--naranja);
     border: 0;
     border-radius: 5px;
+    color: var(--main-bg-color);
 }
 
-#provincias {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    height: 3em;
-    color: var(--contrast-fg-color);
-    font-family: Montserrat, sans-serif;
-    font-size: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    display: block; /* para que cada label se muestre en una línea nueva */
-    font-weight: bold;
-    text-align: justify;
-    margin-top: 1em;
+
+section button:hover {
+    background-color:var(--marron-claro);
 }
+
 
 section form a {
     float: right;
@@ -157,16 +148,51 @@ section form a:hover {
 }
 
 #popup button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75em;
+    width: auto;
+    height: auto;
     background-color: var(--naranja);
-    color: var(--main-fg-color);
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 5px;
+    color: var(--main-bg-color);
+}
+
+#popup button:hover {
+    background-color: var(--marron-claro);
 }
 
 #popup p {
     font-family: Montserrat, sans-serif;
     font-size: 0.75em;
+    text-align: justify;
+    color: var(--contrast-fg-color);
+}
+
+img{
+    height: 5em;
+    margin-bottom: 15px;
+}
+
+#olvidado-contrasena {
+    font-size: small;
+    font-family: Montserrat, sans-serif;
+    color:#598072;
+    background-color:var(--accent-fg-color);
+    width: 15em;
+    margin-top: 15px;
+    margin-bottom: 10px;
     text-align: center;
-    color: var(--txt-color);
+    float: left;
+    height: 3em;
+}
+
+
+#olvidado-contrasena:hover {
+    font-size: small;
+    font-family: Montserrat, sans-serif;
+    color:black;
+    background-color:var(--accent-fg-color);
 }

@@ -129,7 +129,6 @@ section form textarea:focus {
         height: 3em;
     }
 }
-
 #cerrar-popup{
     color:var(--main-fg-color);
 }
@@ -155,25 +154,29 @@ section form textarea:focus {
 }
 
 #popup button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.75em;
-    width: auto;
-    height: auto;
     background-color: var(--naranja);
-    border: 0;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 0.313em;
-    color: var(--main-bg-color);
-}
-
-#popup button:hover {
-    background-color: var(--marron-claro);
+    color: var(--main-fg-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 #popup p {
     font-family: Montserrat, sans-serif;
     font-size: 0.75em;
-    text-align: justify;
+    text-align: center;
+    color: var(--txt-color);
+}
+section form div input {
+    width: 95%;
+    height: 3em;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
+    border: 2px solid var(--verde-medio);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.58);
     color: var(--contrast-fg-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    align-items: center;
 }

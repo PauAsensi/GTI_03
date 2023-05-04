@@ -1,6 +1,7 @@
 body{
     background-color: var(--verde-claro);
     text-align: center;
+    color:var(--contrast-fg-color);
 }
 
 .nostros{
@@ -34,6 +35,7 @@ div h3{
 
 div p{
     padding: 0em 2em 2em 2em;
+
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }

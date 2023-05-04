@@ -36,8 +36,13 @@
     --contrast-bg-color:black;
     --contrast-fg-color:white;
     --accent-bg-color:#fc3d93;
-    --accent-fg-color:#fffffe;
-    --verde-medio: white;
+    --accent-fg-color:#black;
+
+    --naranja:#EDA145;
+    --verde-claro:#598072;
+    --verde-medio:white;
+    --marron-claro:#806259;
+
 }
 
 * {

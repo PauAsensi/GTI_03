@@ -5,26 +5,24 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contactanos</title>
-  <!--Css-->
+  <title>Formulario de compra</title>
+  <!--Enlace css-->
 
-  <link rel="stylesheet" href="../css/estilo-contactanos.css">
+
   <link rel="stylesheet" href="../css/estilos.css">
-  <script src="../js/popup-contactanos.js"></script>
-
-
+  <link rel="stylesheet" href="../css/estilo-compra.css">
   <!--Iconos-->
   <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!-- Menu -->
+<!--Menu-->
 <header id="encabezado">
   <nav id="main-menu">
     <a href="#"><img src="../logos/Logo_Claro.png" alt="Logo" theme="light" id="logo"></a>
 
     <ul>
-      <li class="opciones_menu"><a href="index.html">INICIO</a></li>
+      <li class="opciones_menu"><a href="#seccion1">INICIO</a></li>
       <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
       <li class="opciones_menu"><a href="contactanos.html">CONTÁCTANOS</a></li>
       <li class="opciones_menu"><a href="faq.html">PREGUNTSA FRECUENTES</a></li>
@@ -42,59 +40,69 @@
   </nav>
 </header>
 <!--Fin Menu-->
-
 <!--Script Menu-->
 <script src="../js/main-menu.js"></script>
 <script src="../js/cambiar-tema.js"></script>
 <!--Fin Script Menu-->
 
-<!-- formulario del contacto -->
+<!-- Empieza formulario del compra -->
 <section>
-  <h2>¡Ponte en contacto con nosotros!</h2>
-  <div>
-    <form>
-      <!--nombre y apellidos-->
+  <h2>¡Estás a nada de conseguir tu huerto!</h2>
+  <form>
+    <!--nombre y apellidos-->
+    <div>
       <h3 for="nombre">Nombre y Apellidos*</h3><br>
       <input type="text" id="nombre" name="nombre" required>
-      <br>
+    </div>
 
-      <!--email-->
-      <h3 for="email">Email*</h3><br>
+    <!--email-->
+    <div><h3 for="email">Email*</h3><br>
       <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
              placeholder="correo@dominio.com" required>
-      <br>
+    </div>
 
-      <!--motivo-->
-      <h3>Motivo*</h3>
 
-      <select name="motivo" id="motivos" required>
-        <option value="---">---</option>
-        <option value="Reportar avería">Reportar avería</option>
-        <option value="Garantía de mi huerto">Garantía de mi huerto</option>
-        <option value="Olvide mi nombre de usuario">Olvide mi nombre de usuario</option>
-        <option value="Pérdida de la contraseña">Pérdida de la contraseña</option>
-        <option value="Otro">Otro</option>
-      </select>
-      <br>
+    <!--direccion de envio-->
+    <div><h3 for="direccion de envio">Dirección de envio*</h3><br>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
 
-      <!--mensaje-->
-      <h3 for="mensaje">Mensaje:</h3><br>
-      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más..." required></textarea>
-      <br>
+    <!--titular de la tarjeta-->
+    <div>
+      <h3 for="titular de la tarjeta">Titular de la tarjeta*</h3><br>
+      <input type="text" id="titular" name="titular" required>
+    </div>
 
-      <!--botón enviar-->
-      <a class="boton-envio-form" onclick="validarFormulario()">Enviar</a>
-      <div id="popup" class="popup" style="display: none">
-        <div class="popup-contenido">
-          <p>Usuario o contraseña incorrectos</p><br>
-          <p>Por favor, comprueba que lo has escrito correctamente e inténtalo de nuevo.</p>
-          <button id="cerrar-popup" class="boton-cerrar-popup">Cerrar</button>
-        </div>
+    <!--numero de tarjeta-->
+    <div><h3 for="numero de tarjeta">Número de tarjeta*</h3><br>
+      <input type="text" id="numero" name="numero" pattern="[0-9]{16}"
+             placeholder="#### #### #### ####" required>
+    </div>
+
+    <!--fecha de caducidad-->
+    <div><h3 for="fecha de caducidad">Fecha de caducidad*</h3><br>
+      <input type="month" id="caducidad" name="caducidad" required>
+    </div>
+
+    <!--cvv-->
+    <div><h3 for="cvv">Cvv*</h3><br>
+      <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}"
+             placeholder="###" required>
+    </div>
+
+    <!--botón enviar-->
+    <a class="boton-envio-form" onclick="validarFormulario()">Enviar</a>
+
+    <div id="popup" class="popup" style="display: none">
+      <div class="popup-contenido">
+        <p>Usuario o contraseña incorrectos</p><br>
+        <p>Por favor, comprueba que lo has escrito correctamente e inténtalo de nuevo.</p>
+        <button id="cerrar-popup" class="boton-cerrar-popup">Cerrar</button>
       </div>
-    </form>
-  </div>
+    </div>
+  </form>
 </section>
-<!-- fin del formulario del contacto -->
+<!-- Fin del formulario del contacto -->
 
 <!--Footer-->
 <footer>

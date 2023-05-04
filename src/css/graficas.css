@@ -1,0 +1,110 @@
+main{
+    font-family: "Now Alt Black", sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+
+}
+
+/*Boton on and off a la izquierda*/
+div input{
+    display: none;
+}
+div label{
+    position: relative;
+    display: block;
+    width: 80px;
+    background: #CC9D8F;
+    color: #CC9D8F;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:  300ms linear;
+
+
+}
+
+/*circulo-------------------------------------------------------*/
+#boton{
+    display: flex;
+    justify-content: center;
+
+}
+div label::before{
+
+    position: absolute;
+    top: 50%;
+    left: 5px ;
+    transform: translateY(-50%);
+    content: "" ;
+    color: #2e2e2e;
+    font-size: 0.7em;
+    display: block;
+    width: 25px;/*Tamaño del circulo*/
+    height: 25px;
+    background-color: #f8f5f5;
+    border-radius: 50%;
+    transition: left 300ms linear;
+}
+
+div input:checked + label{
+    background: #C2D9B4;
+    color: #C2D9B4;
+}
+
+div input:checked + label:before{
+    content: "";
+    color: #2e2e2e;
+    font-size: 0.6em;
+    left: 50px;
+
+}
+/*Fin del boton del on/off-----------------------------------------*/
+
+
+/*Los botones mas separados*/
+.seccion3 button{
+    height: 20em;
+    justify-content: center;
+    background-color: #FACD91 ;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 19%;
+}
+
+.seccion3 img{
+    height: 200em;
+    justify-content: center;
+}
+
+.seccion2 img{
+    height:10em;
+    width: 11em ;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Media */
+
+@media (max-width: 600px) {
+
+    /* Mueve el boton on y off a la derecha */
+    #onoff {
+        margin-left: 20em;
+        margin-right: 0;
+
+    }
+
+    /* Adjust spacing between buttons and images */
+    .seccion3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0em;
+    }
+
+    /* Reduce height of button and image */
+    .seccion3 button, .seccion3 img {
+        height: 10em;
+    }
+
+}
