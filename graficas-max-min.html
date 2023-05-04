@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas máx y min</title>
+    <!--Css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/graficas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main-menu.css">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+</head>
+
+<!--AQUI EMPIEZA MENU-->
+<header>
+    <nav id="main-menu">
+        <a href="index.html"><img src="imagenes/logo/Logo modo claro.png" alt="Logo"></a>
+
+        <ul>
+            <li class="opciones_menu"><a href="index.html">INICIO</a></li>
+            <li class="opciones_menu"><a href="#seccion2">PRODUCTOS Y SERVICIOS</a></li>
+            <li class="opciones_menu"><a href="#seccion3">CONTÁCTANOS</a></li>
+            <li class="opciones_menu"><a href="#seccion4">PREGUNTSA FRECUENTES</a></li>
+            <li class="opciones_menu"><a href="#seccion5">QUIENES SOMOS</a></li>
+            <li id="cambiarModo"><a href="css/IniciodeseisonOscuro.css"><i class="fa-solid fa-moon fa-xl"></i></a></li>
+        </ul>
+
+        <div class="hamburguesa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+<hr>
+<!--AQUI ACABA MENU-->
+
+
+<body>
+
+<!--JAVASCRIPT-->
+<script src="js/main-menu.js"></script>
+<script src="/js/cambiar-tema.js"></script>
+<script>window.onload = function () {
+    var maxImg = document.querySelector(".seccion2 img:first-of-type");
+    var minImg = document.querySelector(".seccion2 img:last-of-type");
+    maxImg.setAttribute("src", "imagenes/APAGADO.jpeg");
+    minImg.setAttribute("src", "imagenes/APAGADO2.jpeg");
+}
+
+function cambiaImagen() {
+    var img = document.querySelectorAll(".seccion2 img");
+    if (img[0].getAttribute("src") == "imagenes/APAGADO.jpeg") {
+        img[0].setAttribute("src", "imagenes/grafica-max.jpg");
+        img[1].setAttribute("src", "imagenes/grafica-min.jpeg");
+    }
+    else {
+        img[0].setAttribute("src", "imagenes/APAGADO.jpeg");
+        img[1].setAttribute("src", "imagenes/APAGADO2.jpeg");
+    }
+}
+</script>
+
+
+<main>
+    <section>
+        <div class="seccion1">
+            <h2>Porcentajes</h2>
+            <div id="boton"><!--AQUI VA EL BOTON ON/OFF-->
+                <input type="checkbox" id="toggle1" checked onclick="cambiaImagen()">
+                <label for="toggle1">.</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div class="seccion2"><!--AQUI VA LA GRAFICA MÁX-->
+                <h3>Máxima de hoy</h3>
+                <img alt="grafica-max" src="imagenes/grafica-max.jpg" id="grafica-max-img">
+            </div>
+            <br>
+            <div class="seccion2"><!--AQUI VA LA GRAFICA MIN-->
+                <h3>Mínima de hoy</h3>
+                <img alt="grafica-min" src="imagenes/grafica-min.jpeg" id="apagado2">
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+
+
+<!--EMPIEZA EL FOOTER-->
+<footer>
+
+    <nav id="footer">
+        <section>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+            <a href="https://www.instagram.com/gtihhidroponico/"><i
+                    class="fa-brands fa-square-instagram fa-2xl"></i></a>
+        </section>
+    </nav>
+</footer><!--FIN DEL FOOTER-->
+
+
+</html>
