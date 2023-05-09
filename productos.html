@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos Y Servicios</title>
+    <!--Css-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/productos.css">
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Menu-->
+<header id="encabezado">
+    <nav id="main-menu">
+        <a href="../../index.html"><img src="../logos/Logo_Claro.png" alt="Logo" theme="light" id="logo"></a>
+
+        <ul>
+            <li class="opciones_menu"><a href="../../index.html">INICIO</a></li>
+            <li class="opciones_menu"><a href="productos.html">PRODUCTOS Y SERVICIOS</a></li>
+            <li class="opciones_menu"><a href="contactanos.html">CONTÁCTANOS</a></li>
+            <li class="opciones_menu"><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+            <li class="opciones_menu"><a href="quienes_somos.html">QUIENES SOMOS</a></li>
+            <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
+        </ul>
+
+        <a id="perfil" href="iniciar_sesion.html"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+
+        <div class="hamburguesa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </nav>
+</header>
+<!--Fin Menu-->
+
+<!--Script Menu-->
+<script src="../js/main-menu.js"></script>
+<script src="../js/cambiar-tema.js"></script>
+<!--Fin Script Menu-->
+
+<!--Contenido-->
+<main>
+
+    <!--aqui empieza la sección de la parte de precuctos y servicios y la flecha hacia detrás-->
+    <section>
+        <h1> Productos y servicios </h1>
+    </section>
+    <!--aqui termina la sección de la parte de precuctos y servicios y la flecha hacia detrás-->
+
+    <section>
+
+        <div>
+            <h2> Huerto Hidropónico </h2>
+            <p> Desde 35€ </p>
+
+            <!-- Estrellas -->
+
+            <div class="user-review">
+                <p class="pReseñas">Valoración total de los usuarios: </p>
+                <div class="rating">
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9733;</span>
+                    <span class="estrella">&#9734;</span>
+                </div>
+                <p class="pReseñas">10 Reseñas</p>
+            </div>
+
+            <!--inicio carrusel de imagenes-->
+
+            <div class="slide">
+
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1"
+                           name="slide" aria-hidden="true" hidden="" checked="checked">
+
+                    <div class="slide-item">
+                        <img src="../imagenes/Imagen%20productos%20y%20servicios%201%20(1).jpg">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-2"
+                           name="slide" aria-hidden="true" hidden="">
+
+                    <div class="slide-item">
+                        <img id="imagen2" src="../imagenes/imagen%20productos%20y%20servicios%204.jpg">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-3"
+                           name="slide" aria-hidden="true" hidden="">
+
+                    <div class="slide-item">
+                        <img src="../imagenes/imagen%20productos%20y%20servicios%203.jpg">
+
+                    </div>
+
+                    <label for="slide-3" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
+
+                    <ol class="slide-indicador">
+
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+            <!--fin carrusel de imagenes-->
+
+
+            <!--inicio texto de la ficha del producto-->
+
+            <div class="ficha del producto">
+
+                <h3>
+                    Huerto monitorizado que proporciona información en tiempo real sobre el estado del cultivo. Está
+                    diseñado para ser fácil de usar y mantener, y se adapta a cualquier entorno.
+                </h3>
+
+                <h5> Precio:</h5>
+                <p id="pPrecio">El precio varía según el tamaño y la complejidad de su instalación, pero el precio
+                    promedio oscila entre 35€ y 100€.</p>
+
+                <h4>¿Por qué elegir nuestro huerto?</h4>
+                <h5> - Adaptable: </h5>
+                <p class="pPorque">Se ajusta a las dimensiones del espacio donde se ubicará el huerto, permitiendo una
+                    instalación personalizada y eficiente.</p>
+                <h5> - Monitoreo en tiempo real: </h5>
+                <p class="pPorque">Los sensores proporcionan información en tiempo real sobre el pH, temperatura,
+                    humedad, salinidad e iluminación. Se puede acceder a ella una vez se ha iniciado sesión en la
+                    web.</p>
+                <h5> - Fácil de usar y mantener: </h5>
+                <p class="pPorque">El huerto está diseñado para ser fácil de usar y de mantener, sin importar el nivel
+                    de conocimiento del público respecto a la jardinería.</p>
+                <h5> - Variedad de plantas:</h5>
+                <p class="pPorque">El huerto es apto para cultivar cualquier variedad de plantas, desde hierbas hasta
+                    vegetales.</p>
+
+            </div>
+
+            <div>
+
+                <a href="presupuesto.html">
+                    <button>SOLICÍTALO YA</button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <div class="resena">
+            <h6>Ana</h6>
+            <h7> hace 6 meses</h7>
+            <p>La calidad de las plantas y verduras que he cultivado con este huerto hidropónico en casa es increíble.
+                Sin duda lo recomiendo.</p>
+        </div>
+        <div class="resena">
+            <h6>Paola</h6>
+            <h7> hace 2 meses</h7>
+            <p>La calidad de las plantas y verduras que he cultivado con este huerto hidropónico en casa es increíble.
+                Sin duda lo recomiendo.</p>
+        </div>
+
+        <div>
+
+            <a href="resenas.html">
+                <button id="botonReseñas">Leer más reseñas</button>
+            </a>
+
+        </div>
+    </div>
+
+</main>
+<!--Footer-->
+<footer>
+    <nav id="footer">
+        <section>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://twitter.com/gtihhidroponico"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+            <a href="contactanos.html"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+            <a href="https://instagram.com/gtihhidroponico?igshid=MTIyMzRjYmRlZg=="><i
+                    class="fa-brands fa-square-instagram fa-2xl"></i></a>
+        </section>
+    </nav>
+</footer>
+
+</body>
+</html>
