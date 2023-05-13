@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesion</title>
+  <!--Css-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/iniciodesesion.css">
+
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--Menu-->
+<header id="encabezado">
+  <nav id="main-menu">
+    <a href="../../index.html"><img src="../logos/Logo_Claro.png" alt="Logo" theme="light" id="logo"></a>
+
+    <ul>
+      <li class="opciones_menu"><a href="../../index.html">INICIO</a></li>
+      <li class="opciones_menu"><a href="productos.html">PRODUCTOS Y SERVICIOS</a></li>
+      <li class="opciones_menu"><a href="contactanos.html">CONTÁCTANOS</a></li>
+      <li class="opciones_menu"><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+      <li class="opciones_menu"><a href="quienes_somos.html">QUIENES SOMOS</a></li>
+      <li id="cambiarModo"><a class="cambiarTema"><i class="fa-solid fa-moon fa-xl"></i></a></li>
+    </ul>
+
+    <a id="perfil" href="#"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+
+    <div class="hamburguesa">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+<!--Fin Menu-->
+<!--JS-->
+<script src="../js/main-menu.js"></script>
+<script src="../js/cambiar-tema.js"></script>
+<script src="/src/js/iniciodesesion.js"></script>
+
+<!--Fin Script Menu-->
+<section>
+  <div class="container">
+    <h2>Iniciar sesión</h2>
+    <img src="../iconos/usuario.png" alt="icono inicio sesión">
+    <form onsubmit="validarFormulario(event)">
+      <label for="usuario">Nombre de usuario:</label><br>
+      <input type="text" id="usuario" name="usuario" required><br>
+      <label for="contrasenya">Contraseña:</label><br>
+      <input type="password" id="contrasenya" name="contrasenya" required><br>
+      <label for="checkbox">Mostrar contraseña</label>
+      <input type="checkbox" id="checkbox" name="checkbox" onclick="mostrarContrasenya()"><br><br>
+
+      <!--botón enviar-->
+      <button type="submit" class="boton-envio-form">Iniciar sesión</button>
+    </form>
+  </div>
+</section>
+
+<div id="popup" class="popup" style="display: none;">
+  <div class="popup-contenido">
+    <p>Usuario o contraseña incorrectos</p><br>
+    <p>Por favor, comprueba que lo has escrito correctamente e inténtalo de nuevo.</p>
+    <button id="cerrar-popup" class="boton-cerrar-popup">Cerrar</button>
+  </div>
+</div>
+
+
+<!--EMPIEZA EL FOOTER-->
+<footer>
+  <nav id="footer">
+    <section>
+      <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+      <a href="https://twitter.com/gtihhidroponico"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+      <a href="contactanos.html"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+      <a href="https://instagram.com/gtihhidroponico?igshid=MTIyMzRjYmRlZg=="><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+    </section>
+  </nav>
+</footer><!--FIN DEL FOOTER-->
+</body>
+</html>
