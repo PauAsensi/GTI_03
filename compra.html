@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario de compra</title>
+  <!--Enlace css-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/estilo-compra.css">
+
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/96741d0ff5.js" crossorigin="anonymous"></script>
+
+  <!--JS-->
+  <script src="/src/js/popup-compra.js"></script>
+
+</head>
+<body>
+
+<!--Menu-->
+<header id="encabezado">
+  <nav id="main-menu">
+    <a href="../../index.php"><img src="../logos/Logo_Claro.png" alt="Logo" theme="light" id="logo"></a>
+
+    <ul>
+      <li class="opciones_menu"><a href="../../index.php">INICIO</a></li>
+      <li class="opciones_menu"><a href="productos.html">PRODUCTOS Y SERVICIOS</a></li>
+      <li class="opciones_menu"><a href="contactanos.html">CONTÁCTANOS</a></li>
+      <li class="opciones_menu"><a href="faq.html">PREGUNTAS FRECUENTES</a></li>
+      <li class="opciones_menu"><a href="quienes_somos.html">QUIENES SOMOS</a></li>
+    </ul>
+
+    <a id="perfil" href="iniciar_sesion.php"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+
+    <div class="hamburguesa">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+<!--Fin Menu-->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--Script Menu-->
+<script src="../js/main-menu.js"></script>
+<script src="../js/cambiar-tema.js"></script>
+<!--Fin Script Menu-->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--Script Menu-->
+<script src="../js/main-menu.js"></script>
+<script src="../js/cambiar-tema.js"></script>
+<!--Fin Script Menu-->
+
+<!-- Empieza formulario del compra -->
+<section>
+  <h2>¡Estás a nada de conseguir tu huerto!</h2>
+  <form>
+    <!--nombre y apellidos-->
+    <div>
+      <h3 for="nombre">Nombre y Apellidos*</h3><br>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <!--email-->
+    <div><h3 for="email">Email*</h3><br>
+      <input type="email" id="email" name="email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+             placeholder="correo@dominio.com" required>
+    </div>
+
+
+    <!--direccion de envio-->
+    <div><h3 for="direccion de envio">Dirección de envio*</h3><br>
+      <input type="text" id="direccion" name="direccion" required>
+    </div>
+
+    <!--titular de la tarjeta-->
+    <div>
+      <h3 for="titular de la tarjeta">Titular de la tarjeta*</h3><br>
+      <input type="text" id="titular" name="titular" required>
+    </div>
+
+    <!--numero de tarjeta-->
+    <div><h3 for="numero de tarjeta">Número de tarjeta*</h3><br>
+      <input type="text" id="numero" name="numero" pattern="[0-9]{16}" maxlength="19"
+             placeholder="#### #### #### ####" required>
+    </div>
+
+    <div id="juntar">
+      <!--fecha de caducidad-->
+      <div><h3 for="fecha de caducidad">Fecha de caducidad*</h3><br>
+        <input type="month" id="caducidad" name="caducidad" required>
+      </div>
+
+      <!--cvv-->
+      <div><h3 for="cvv">Cvv*</h3><br>
+        <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" maxlength="3"
+               placeholder="###" required>
+      </div>
+    </div>
+
+    <!--botón enviar-->
+    <a class="boton-envio-form" onclick="validarFormulariocompra()">Enviar</a>
+
+    <div id="popup" class="popup" style="display: none">
+      <div class="popup-contenido">
+        <p>¡Felicidades!</p><br>
+        <p>Has conseguido tu huerto hidroponico</p>
+        <button onclick="cerrarPopup()" id="cerrar-popup">Cerrar</button>
+      </div>
+    </div>
+  </form>
+</section>
+<!-- Fin del formulario del contacto -->
+
+<!--Footer-->
+<footer>
+  <nav id="footer">
+    <section>
+      <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+      <a href="https://twitter.com/gtihhidroponico"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+      <a href="https://instagram.com/gtihhidroponico?igshid=MTIyMzRjYmRlZg=="><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+      <a href="contactanos.html"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+    </section>
+  </nav>
+</footer>
+<!--Fin Footer-->
+</body>
+</html>
